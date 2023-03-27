@@ -3,5 +3,7 @@
 }
 
 #headshot {
-    width: 10em
+    width: 10em;
+    border-radius: 50%;
+    border-color: gold;
 }
