@@ -8,7 +8,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 50% 20% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 30% 10% 10% 10% 10% 10% 10%;
     grid-template-areas: 
     "hdr hdr"
     "img img"
@@ -27,6 +27,7 @@ div, h1 {
 }
 
 header {
+    font-size: 20px;
     grid-area: hdr;
     display: flex;
     align-items:center;
@@ -40,44 +41,54 @@ header {
 }
 
 #headshot {
-    width: 10em;
+    width: 20em;
     border-radius: 50%;
     border: 20px black;
 }
 
 #name {
     grid-area: name;
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 300;
 }
 
 #rating {
     grid-area: rtg;
     background-color: lightgray;
+    font-size: 40px;
+    align-items: end;
 }
 
 #role {
+    align-items: baseline;
     grid-area: role;
     background-color: lightgray;
+    font-size: 40px;
 }
 
 #offer {
     grid-area: offer;
     font-weight: 900;
+    font-size: 30px;
+    align-items: end;
 }
 
 #cost {
     grid-area: cost;
+    font-size: 30px;
+    align-items: baseline;
 }
 
 #phone {
     grid-area: phone;
     background-color: lightgreen;
+    font-size: 30px;
 }
 
 #chat {
     grid-area: chat;
     background-color: forestgreen;
+    font-size: 30px;
 }
 
 
