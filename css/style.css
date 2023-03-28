@@ -1,9 +1,83 @@
+
+/* styled for mobile first */
 * {
     box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 50% 20% 10% 10% 10% 10% 10%;
+    grid-template-areas: 
+    "hdr hdr"
+    "img img"
+    "name name"
+    "rtg rtg"
+    "role role"
+    "offer offer"
+    "cost cost"
+    "phone chat";
+}
+
+div, h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    grid-area: hdr;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    margin: 0 10px 0 0;
+    color: lightgray;
+
+}
+#headshot-div {
+    grid-area: img;
 }
 
 #headshot {
     width: 10em;
     border-radius: 50%;
-    border-color: gold;
+    border: 20px black;
 }
+
+#name {
+    grid-area: name;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#rating {
+    grid-area: rtg;
+    background-color: lightgray;
+}
+
+#role {
+    grid-area: role;
+    background-color: lightgray;
+}
+
+#offer {
+    grid-area: offer;
+}
+
+#cost {
+    grid-area: cost;
+}
+
+#phone {
+    grid-area: phone;
+}
+
+#chat {
+    grid-area: chat;
+}
+
+#phone {
+    grid-area: phone;
+    background-color: green;
+}
+
