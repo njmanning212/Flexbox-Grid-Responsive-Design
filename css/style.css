@@ -5,6 +5,7 @@
 }
 
 body {
+    height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% 50% 20% 10% 10% 10% 10% 10%;
@@ -62,6 +63,7 @@ header {
 
 #offer {
     grid-area: offer;
+    font-weight: 900;
 }
 
 #cost {
@@ -70,14 +72,12 @@ header {
 
 #phone {
     grid-area: phone;
+    background-color: lightgreen;
 }
 
 #chat {
     grid-area: chat;
+    background-color: forestgreen;
 }
 
-#phone {
-    grid-area: phone;
-    background-color: green;
-}
 
